@@ -1,0 +1,45 @@
+
+*{
+  background-color: #FFF9B5;
+  margin : auto;
+  
+}
+body{/*스크롤바 항시 표시. 이유는 펼치기 접기에 따른 화면 울렁현상 제거용*/
+	overflow : scroll;
+}
+h1{
+  text-align: center;
+}
+button#findRoad{/*길찾기 버튼*/
+position : relative;
+	left : 70%;
+	width : 30%;
+	background-color : skyblue;
+	
+}
+div{ /*결과 정보 항목*/
+	margin-top:5%;
+  border : 1px solid black;
+  width :70%;
+  height:100%;
+  padding : 10px;
+  overflow : hidden;
+}
+img#photo{/*사진*/
+width :30%;
+height:30%;
+border : 1px solid black;
+float: left;
+margin-bottom : 5px;
+margin-right : 5px;
+}
+iframe{/*펼치기 일때만 보이도록 초기값은 안보이도록*/
+	position : relative;
+	display : none;
+	width : 100%;
+	height :300px;
+}
+
+#hiddenp{/*주소넣을 숨겨진 p태그*/
+	display:none;
+}
